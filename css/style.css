@@ -1,0 +1,133 @@
+body {
+	color: #999;
+	margin: auto 10px;
+}
+
+/* fluid Grids layout */
+#bd {
+    padding-left: 170px; /* allow for left column (#nav) */
+}
+
+#side {
+    margin-left: -170px;
+    position: relative; /* workaround for IE9 not firing mouse events on #side due to negative margin */
+    width: 170px;
+}
+
+#side .content {
+    margin-right: 10px; /* gutter between #nav and #main */
+}
+
+/* end Grids customization */
+
+h1 {
+	text-align: left;
+	background-color: #ccc;
+	padding: .25em;
+	color: #000;
+}
+
+#footer {
+	border-top: solid 1px #000;
+	font-size: 85%;
+	padding-top: .25em;
+}
+
+form, form div {
+	margin: .5em 0;
+}
+
+p.first-of-type {
+	margin-top: .5em;
+}
+
+.yui3-loading #productsandservices {
+	display: none;
+}
+.yui3-menu-shadow {
+
+    position: absolute;
+    z-index: -1;
+    top: 2px;
+    left: -3px;
+    background-color: #000;
+    opacity: .12;
+    filter: alpha(opacity=12);  /*  For IE since it doesn't implement the CSS3
+                                    "opacity" property. */
+    padding: 1px 3px 0 3px;
+    width: 100%;
+    height: 100%;
+
+}
+
+#productsandservices .yui3-menu .yui3-shim {
+
+    z-index: -2;    /* Place the iframe shim behind the shadow element */
+
+    /*
+        Adjust the dimensions of the <iframe> shim to match the shadow,
+        otherwise <select> elements will poke through the shadow.
+    */
+
+    left: -3px;
+    padding: 3px 3px 0 3px;
+
+}
+/* Goals ================================================================================== */ 
+
+.goals {
+	width: 500px;
+	height: 250px;
+}
+
+h4 {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 15px;
+	font-weight: bold;
+	font-size: 167%;
+	color: #EE4728;
+	letter-spacing: -1px;
+}
+h5 {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 15px;
+	font-weight: bold;
+	font-size: 138%;
+	color: #EE4728;
+	letter-spacing: -1px;
+}
+.goals ul{
+	width:350px;
+	margin-bottom:20px;
+	overflow:hidden;
+	border-top:1px solid #ccc;
+}
+.goals li{
+	line-height:1.5em;
+	border-bottom:1px solid #ccc;
+	float:left;
+	display:inline;
+	font-size: 88%;
+}
+#double li {
+    background:url("/images/checkmark.jpg") no-repeat 0 50%;
+}
+
+.goals a:hover { background:#EE4728; color: #000000;}
+
+#double li  { width:50%;} /* 2 col */
+
+.goals ul li a {
+	display: block;
+	color: #666;
+	text-decoration: none;
+	padding-left: 30px;
+	padding-top: 9px;
+}
+.purchase {
+	text-align: center;
+}
